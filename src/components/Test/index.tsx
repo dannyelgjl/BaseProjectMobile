@@ -1,8 +1,13 @@
 import React from 'react';
-import {Container} from './styles';
+import {Container, Title} from './styles';
+import {ITest} from './types';
 
-const Test: React.FC = () => {
-  return <Container />;
+const Test = ({title}: ITest) => {
+  return (
+    <Container>
+      <Title>{title}</Title>
+    </Container>
+  );
 };
 
 export default Test;
